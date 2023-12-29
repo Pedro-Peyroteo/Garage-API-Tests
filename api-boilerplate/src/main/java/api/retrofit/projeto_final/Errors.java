@@ -1,4 +1,4 @@
-package api.retrofit.generic;
+package api.retrofit.projeto_final;
 
 
 import api.mappings.generic.ErrorResponse;
