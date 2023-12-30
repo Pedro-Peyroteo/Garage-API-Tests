@@ -1,6 +1,6 @@
 package api.client;
 
-import api.mappings.garage.client.ClientResponse;
+import api.mappings.client.ClientResponse;
 import org.testng.annotations.Test;
 import retrofit2.Response;
 
@@ -33,6 +33,7 @@ public class GetClientPositiveTest {
     {
         Response<ClientResponse> response = getClientByid(1);
         assertOk(response);
+
         assertThat("Body is not null", response.body(), notNullValue());
 
         ClientResponse clientResponse = response.body();

@@ -1,6 +1,6 @@
 package api.client;
 
-import api.mappings.garage.client.ClientResponse;
+import api.mappings.client.ClientResponse;
 import org.testng.annotations.Test;
 import retrofit2.Response;
 

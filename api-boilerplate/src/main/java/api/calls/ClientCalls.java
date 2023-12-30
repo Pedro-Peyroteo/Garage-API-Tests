@@ -1,6 +1,7 @@
 package api.calls;
 
-import api.mappings.garage.client.ClientResponse;
+import api.mappings.client.ClientRequest;
+import api.mappings.client.ClientResponse;
 import api.retrofit.garage.Client;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -22,5 +23,5 @@ public interface ClientCalls {
     Call<ClientResponse> getClientId(@Path(ID) Integer clientId);
 
     @POST(CLIENT)
-    Call<ClientResponse> createClient(@Body Client client);
+    Call<ClientResponse> createClient(@Body ClientRequest client);
 }

@@ -1,4 +1,4 @@
-package api.mappings.garage.client;
+package api.mappings.client;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -33,9 +33,9 @@ public class ClientResponse {
        @JsonProperty
        private Integer nif;
        @JsonProperty
-       private Date birthDate;
+       private String birthDate;
        @JsonProperty
-       private Date clientDate;
+       private String clientDate;
        @JsonProperty
        private List<api.mappings.vehicle.VehicleResponse> vehicles;
 }

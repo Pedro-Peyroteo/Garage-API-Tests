@@ -1,6 +1,7 @@
 package api.client;
 
 import api.mappings.client.ClientRequest;
+import api.mappings.client.ClientResponse;
 import api.retrofit.garage.Client;
 import org.testng.annotations.Test;
 import retrofit2.Response;
@@ -17,24 +18,28 @@ public class CreateClientPositiveTest {
     @Test(description = "create client with success")
     public void createClientTest() {
         // Dados do cliente a serem enviados na requisição
-        Client clientRequest = ClientRequest.builder(){
-                    .firstname("John")
-                    .lastname("Doe")
-                    .address("123 Main St")
-                    .postalCode("12345")
-                    .city("Anytown")
-                    .country("CountryName")
-                    .phoneNumber(123456789)
-                    .nif(245069550)
-                    .birthDate("2000-10-20")
-                    .clientDate("2023-12-23")
-                    .build();
+        ClientRequest clientRequest = ClientRequest.builder()
+                .firstName("John")
+                .lastName("Doe")
+                .address("123 Main St")
+                .postalCode("3810-700")
+                .city("Anytown")
+                .country("CountryName")
+                .phoneNumber(123456789)
+                .nif(123456789)
+                .birthDate("2000-10-20") // Manter como String
+                .clientDate("2023-12-23") // Manter como String
+                .build();
 
-        Response<Client> response = createClient(clientRequest);
+        Response<ClientResponse> response = createClient(clientRequest);
         assertCreated(response);
 
         assertThat("Body is not null", response.body(), notNullValue());
-        Client clientResponse = response.body();
+        ClientResponse clientResponse = response.body();
+
+        // Convertendo as datas do ClientRequest de String para LocalDate para comparação
+        LocalDate parsedBirthDate = LocalDate.parse(clientRequest.getBirthDate());
+        LocalDate parsedClientDate = LocalDate.parse(clientRequest.getClientDate());
 
         // Realizar asserções para verificar se os dados do cliente criado são os mesmos que foram enviados na requisição
         assertThat("id should not be null", clientResponse.getId(), notNullValue());
@@ -46,7 +51,9 @@ public class CreateClientPositiveTest {
         assertThat("Country is not the expected", clientResponse.getCountry(), is(clientRequest.getCountry()));
         assertThat("Phone number is not the expected", clientResponse.getPhoneNumber(), is(clientRequest.getPhoneNumber()));
         assertThat("NIF is not the expected", clientResponse.getNif(), is(clientRequest.getNif()));
-        assertThat("Birth date is not the expected", clientResponse.getBirthDate(), is(clientRequest.getBirthDate()));
-        assertThat("Client date is not the expected", clientResponse.getClientDate(), is(clientRequest.getClientDate()));
+        assertThat("Birth date is not the expected", clientResponse.getBirthDate(), is(parsedBirthDate)); // Comparando como LocalDate
+        assertThat("Client date is not the expected", clientResponse.getClientDate(), is(parsedClientDate)); // Comparando como LocalDate
     }
+
+
 }

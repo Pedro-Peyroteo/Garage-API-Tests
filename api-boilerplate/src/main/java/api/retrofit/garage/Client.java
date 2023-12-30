@@ -1,6 +1,7 @@
 package api.retrofit.garage;
 import api.calls.ClientCalls;
-import api.mappings.garage.client.ClientResponse;
+import api.mappings.client.ClientRequest;
+import api.mappings.client.ClientResponse;
 import api.retrofit.RetrofitBuilder;
 import lombok.SneakyThrows;
 import retrofit2.Response;
@@ -22,7 +23,7 @@ public class Client {
     }
 
     @SneakyThrows
-    public static Response<ClientResponse> createClient(Client client)
+    public static Response<ClientResponse> createClient(ClientRequest client)
     {
         return clientCalls.createClient(client).execute();
     }
