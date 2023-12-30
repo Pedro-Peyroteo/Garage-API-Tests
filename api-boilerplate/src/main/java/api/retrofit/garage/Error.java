@@ -1,7 +1,7 @@
-package api.retrofit.projeto_final;
+package api.retrofit.garage;
 
 
-import api.mappings.generic.ErrorResponse;
+import api.mappings.ErrorResponse;
 import api.retrofit.RetrofitBuilder;
 import okhttp3.ResponseBody;
 import retrofit2.Converter;
@@ -11,7 +11,7 @@ import retrofit2.Retrofit;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 
-public class Errors {
+public class Error {
 
     /**
      * Can use this class to convert normal body to errorBody to check errors
