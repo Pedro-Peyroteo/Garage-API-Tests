@@ -10,11 +10,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Vehicle {
+public class VehicleResponse {
     @JsonProperty
     private Integer id;
     @JsonProperty
-    private Integer client; // Assuming this is the reference to the client
+    private Integer client;
     @JsonProperty
     private String brand;
     @JsonProperty

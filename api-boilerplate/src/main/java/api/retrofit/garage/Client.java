@@ -1,23 +1,29 @@
-package api.retrofit.projeto_final;
+package api.retrofit.garage;
 import api.calls.ClientCalls;
-import api.mappings.client.Client;
+import api.mappings.garage.client.ClientResponse;
 import api.retrofit.RetrofitBuilder;
 import lombok.SneakyThrows;
 import retrofit2.Response;
 
 import java.util.List;
 
-public class Clients {
+public class Client {
     public static final ClientCalls clientCalls = new RetrofitBuilder().getRetrofit().create(ClientCalls.class);
 
     @SneakyThrows
-    public static Response<Client> getClientByid(Integer clientId)
+    public static Response<ClientResponse> getClientByid(Integer clientId)
     {
         return clientCalls.getClientId(clientId).execute();
     }
 
     @SneakyThrows
-    public static Response<List<Client>> getAllClient(){
+    public static Response<List<ClientResponse>> getAllClients(){
         return clientCalls.getAllClient().execute();
+    }
+
+    @SneakyThrows
+    public static Response<ClientResponse> createClient(Client client)
+    {
+        return clientCalls.createClient(client).execute();
     }
 }
