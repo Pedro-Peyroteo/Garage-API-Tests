@@ -31,11 +31,11 @@ public class CreateClientPositiveTest {
                 .clientDate("2023-12-23") // Manter como String
                 .build();
 
-        Response<ClientResponse> response = createClient(clientRequest);
+        Response<ClientRequest> response = createClient(clientRequest);
         assertCreated(response);
 
         assertThat("Body is not null", response.body(), notNullValue());
-        ClientResponse clientResponse = response.body();
+        ClientRequest clientResponse = response.body();
 
         // Convertendo as datas do ClientRequest de String para LocalDate para comparação
         LocalDate parsedBirthDate = LocalDate.parse(clientRequest.getBirthDate());

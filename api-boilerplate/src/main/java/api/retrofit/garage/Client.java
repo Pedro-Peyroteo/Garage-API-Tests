@@ -23,7 +23,7 @@ public class Client {
     }
 
     @SneakyThrows
-    public static Response<ClientResponse> createClient(ClientRequest client)
+    public static Response<ClientRequest> createClient(ClientRequest client)
     {
         return clientCalls.createClient(client).execute();
     }

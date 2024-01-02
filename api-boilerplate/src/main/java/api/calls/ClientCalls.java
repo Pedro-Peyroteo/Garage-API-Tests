@@ -23,5 +23,5 @@ public interface ClientCalls {
     Call<ClientResponse> getClientId(@Path(ID) Integer clientId);
 
     @POST(CLIENT)
-    Call<ClientResponse> createClient(@Body ClientRequest client);
+    Call<ClientRequest> createClient(@Body ClientRequest client);
 }
