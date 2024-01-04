@@ -1,59 +1,48 @@
 package api.client;
 
+import api.helper.ClientRequests;
 import api.mappings.client.ClientRequest;
 import api.mappings.client.ClientResponse;
 import api.retrofit.garage.Client;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import retrofit2.Response;
 
 import java.time.LocalDate;
 
+import static api.helper.ClientRequests.newPositiveClient;
 import static api.retrofit.garage.Client.createClient;
+import static api.validators.ResponseBodyValidator.assertBodyNotNull;
 import static api.validators.ResponseValidator.assertCreated;
+import static api.validators.ResponseValidator.assertNoContent;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 public class CreateClientPositiveTest {
+    private Integer newClientId;
+
+
+    @AfterMethod
+    public void cleanUp(){
+        Response<Void> response = Client.deleteClient(newClientId);
+        assertNoContent(response);
+
+        newClientId = null;
+    }
 
     @Test(description = "create client with success")
     public void createClientTest() {
         // Dados do cliente a serem enviados na requisição
-        ClientRequest clientRequest = ClientRequest.builder()
-                .firstName("John")
-                .lastName("Doe")
-                .address("123 Main St")
-                .postalCode("3810-700")
-                .city("Anytown")
-                .country("CountryName")
-                .phoneNumber(123456789)
-                .nif(123456789)
-                .birthDate("2000-10-20") // Manter como String
-                .clientDate("2023-12-23") // Manter como String
-                .build();
+        ClientRequest clientRequest = newPositiveClient();
 
-        Response<ClientRequest> response = createClient(clientRequest);
+        Response<Integer> response = createClient(clientRequest);
         assertCreated(response);
+        newClientId = response.body();
 
         assertThat("Body is not null", response.body(), notNullValue());
-        ClientRequest clientResponse = response.body();
-
-        // Convertendo as datas do ClientRequest de String para LocalDate para comparação
-        LocalDate parsedBirthDate = LocalDate.parse(clientRequest.getBirthDate());
-        LocalDate parsedClientDate = LocalDate.parse(clientRequest.getClientDate());
-
-        // Realizar asserções para verificar se os dados do cliente criado são os mesmos que foram enviados na requisição
-        assertThat("id should not be null", clientResponse.getId(), notNullValue());
-        assertThat("First name is not the expected", clientResponse.getFirstName(), is(clientRequest.getFirstName()));
-        assertThat("Last name is not the expected", clientResponse.getLastName(), is(clientRequest.getLastName()));
-        assertThat("Address is not the expected", clientResponse.getAddress(), is(clientRequest.getAddress()));
-        assertThat("Postal code is not the expected", clientResponse.getPostalCode(), is(clientRequest.getPostalCode()));
-        assertThat("City is not the expected", clientResponse.getCity(), is(clientRequest.getCity()));
-        assertThat("Country is not the expected", clientResponse.getCountry(), is(clientRequest.getCountry()));
-        assertThat("Phone number is not the expected", clientResponse.getPhoneNumber(), is(clientRequest.getPhoneNumber()));
-        assertThat("NIF is not the expected", clientResponse.getNif(), is(clientRequest.getNif()));
-        assertThat("Birth date is not the expected", clientResponse.getBirthDate(), is(parsedBirthDate)); // Comparando como LocalDate
-        assertThat("Client date is not the expected", clientResponse.getClientDate(), is(parsedClientDate)); // Comparando como LocalDate
     }
+
+
 
 
 }

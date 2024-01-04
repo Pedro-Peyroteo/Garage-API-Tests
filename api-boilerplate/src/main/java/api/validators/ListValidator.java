@@ -13,6 +13,11 @@ public class ListValidator {
         assertThat("List shouldn't be null", list, notNullValue());
     }
 
+    public static void assertListHasSize(List<?> list, Integer size){
+        assertThat("List shouldn't be null", list, notNullValue());
+        assertThat("List size different than excpected", list, hasSize(size));
+    }
+
     public static void assertListHasSize(List<?> list, Matcher<? super Integer> matcher){
         assertThat("List shouldn't be null", list, notNullValue());
         assertThat("List size different than excpected", list, hasSize(matcher));

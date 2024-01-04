@@ -4,10 +4,7 @@ import api.mappings.client.ClientRequest;
 import api.mappings.client.ClientResponse;
 import api.retrofit.garage.Client;
 import retrofit2.Call;
-import retrofit2.http.Body;
-import retrofit2.http.GET;
-import retrofit2.http.POST;
-import retrofit2.http.Path;
+import retrofit2.http.*;
 
 import java.util.List;
 
@@ -23,5 +20,8 @@ public interface ClientCalls {
     Call<ClientResponse> getClientId(@Path(ID) Integer clientId);
 
     @POST(CLIENT)
-    Call<ClientRequest> createClient(@Body ClientRequest client);
+    Call<Integer> createClient(@Body ClientRequest client);
+
+    @DELETE(CLIENT_ID)
+    Call<Void> deleteClient(@Path(ID) Integer clientId);  // Call <void> pois o metodo retorna null
 }

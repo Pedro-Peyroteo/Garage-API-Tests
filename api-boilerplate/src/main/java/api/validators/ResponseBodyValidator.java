@@ -24,5 +24,7 @@ public class ResponseBodyValidator {
         assertThat("Response body should be null", response.body(), nullValue());
     }
 
-
+    public static void assertId(Integer clientId, Integer exceptedId){
+        assertThat("Id is not the expected", clientId, is(exceptedId));
+    }
 }

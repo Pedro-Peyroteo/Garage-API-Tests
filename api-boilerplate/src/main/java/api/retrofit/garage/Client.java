@@ -23,8 +23,13 @@ public class Client {
     }
 
     @SneakyThrows
-    public static Response<ClientRequest> createClient(ClientRequest client)
+    public static Response<Integer> createClient(ClientRequest client)
     {
         return clientCalls.createClient(client).execute();
+    }
+
+    @SneakyThrows
+    public static Response<Void> deleteClient(Integer clientId){
+        return clientCalls.deleteClient(clientId).execute();
     }
 }
