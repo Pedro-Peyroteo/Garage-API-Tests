@@ -67,22 +67,7 @@ public class CreateClientPositiveTest {
         assertId(getResponse.body().getId(), newClientId);
     }
 
-    @Test(description = "Create client with the birth date set to a future date")
-    public void createClientWithBirthDateSetToFutureDateTest(){
-        ClientRequest addedClientRequest = newPositiveClient();
-        addedClientRequest.setBirthDate(new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now().plusDays(1))));
 
-        Response<Integer> createResponse = Client.createClient(addedClientRequest);
-        assertCreated(createResponse);
-        assertBodyNotNull(createResponse);
-        newClientId = createResponse.body();
-
-        Response<ClientResponse> getResponse = Client.getClientByid(newClientId);
-        assertOk(getResponse);
-
-        assertClientResponse(getResponse.body(), addedClientRequest);
-        assertId(getResponse.body().getId(), newClientId);
-    }
 
     @Test(description = "Create client with the client date set to current date")
     public void createClientWithClientDateSetToCurrentDateTest(){
@@ -100,4 +85,23 @@ public class CreateClientPositiveTest {
         assertClientResponse(getResponse.body(), addedClientRequest);
         assertId(getResponse.body().getId(), newClientId);
     }
+
+    @Test(description = "Create client with the client date set to past date")
+    public void createClientWithClientDateSetToPastDateTest(){
+        ClientRequest addedClientRequest = newPositiveClient();
+        addedClientRequest.setClientDate(new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now().minusDays(7))));
+
+        Response<Integer> createResponse = Client.createClient(addedClientRequest);
+        assertCreated(createResponse);
+        assertBodyNotNull(createResponse);
+        newClientId = createResponse.body();
+
+        Response<ClientResponse> getResponse = Client.getClientByid(newClientId);
+        assertOk(getResponse);
+
+        assertClientResponse(getResponse.body(), addedClientRequest);
+        assertId(getResponse.body().getId(), newClientId);
+    }
+
+
 }

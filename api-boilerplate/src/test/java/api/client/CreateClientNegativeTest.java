@@ -23,8 +23,10 @@ public class CreateClientNegativeTest {
 
     @AfterMethod
     public void cleanUp(){
-        Response<Void> response = Client.deleteClient(newClientId);
-        assertNoContent(response);
+        if (newClientId != null){
+            Response<Void> response = Client.deleteClient(newClientId);
+            assertNoContent(response);
+        }
 
         newClientId = null;
     }
@@ -64,9 +66,34 @@ public class CreateClientNegativeTest {
         newClientId = createResponse.body();
 
         Response<ClientResponse> getResponse = Client.getClientByid(newClientId);
-        assertOk(getResponse);
+        assertBadRequest(getResponse);
+    }
 
-        assertClientResponse(getResponse.body(), addedClientRequest);
-        assertId(getResponse.body().getId(), addedClientRequest.getId());
+    @Test(description = "Create client with the client date set to future date")
+    public void createClientWithClientDateSetToFutureDateTest(){
+        ClientRequest addedClientRequest = newPositiveClient();
+        addedClientRequest.setClientDate(new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now().plusDays(7))));
+
+        Response<Integer> createResponse = Client.createClient(addedClientRequest);
+        assertCreated(createResponse);
+        assertBodyNotNull(createResponse);
+        newClientId = createResponse.body();
+
+        Response<ClientResponse> getResponse = Client.getClientByid(newClientId);
+        assertBadRequest(getResponse);;
+    }
+
+    @Test(description = "Create client with the birth date set to a future date")
+    public void createClientWithBirthDateSetToFutureDateTest(){
+        ClientRequest addedClientRequest = newPositiveClient();
+        addedClientRequest.setBirthDate(new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now().plusDays(1))));
+
+        Response<Integer> createResponse = Client.createClient(addedClientRequest);
+        assertCreated(createResponse);
+        assertBodyNotNull(createResponse);
+        newClientId = createResponse.body();
+
+        Response<ClientResponse> getResponse = Client.getClientByid(newClientId);
+        assertBadRequest(getResponse);
     }
 }

@@ -50,12 +50,12 @@ public class ClientValidator {
         assertThat("Birth date should not be null", clientResponse.getBirthDate(), notNullValue());
         assertThat("Birth Date not the expected", clientResponse.getBirthDate(), is(expected.getBirthDate())); //
         if (clientResponse.getBirthDate() != null)
-            assertThat("Birth date is invalid", clientResponse.getBirthDate(), is(greaterThanOrEqualTo(String.valueOf(LocalDate.now()))));
+            assertThat("Birth date is invalid", clientResponse.getBirthDate(), is(lessThanOrEqualTo(String.valueOf(LocalDate.now()))));
 
         assertThat("Client date should not be null", clientResponse.getClientDate(), notNullValue());
         assertThat("Client Date not the expected", clientResponse.getClientDate(), is(expected.getClientDate())); //
         if (clientResponse.getClientDate() != null)
-            assertThat("Client date is invalid", clientResponse.getClientDate(), is(lessThanOrEqualTo(String.valueOf(LocalDate.now()))));
+            assertThat("Client date is invalid", clientResponse.getClientDate(), is(greaterThanOrEqualTo(String.valueOf(LocalDate.now()))));
 
         //if (clientResponse.getClientDate() != null)
             //assertThat("Client Date is invalid", clientResponse.getClientDate(), is(lessThanOrEqualTo(clientResponse.getClientDate());
