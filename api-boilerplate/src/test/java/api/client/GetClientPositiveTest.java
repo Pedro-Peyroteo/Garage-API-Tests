@@ -34,6 +34,7 @@ public class GetClientPositiveTest {
 
     @AfterMethod
     public void cleanUp(){
+
         Response<Void> response = Client.deleteClient(newClientId);
         assertNoContent(response);
 
