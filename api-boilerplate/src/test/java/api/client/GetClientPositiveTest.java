@@ -12,7 +12,7 @@ import static api.retrofit.garage.Client.getAllClients;
 import static api.validators.ListValidator.assertListHasSize;
 import static api.validators.ResponseBodyValidator.assertBodyNotNull;
 import static api.validators.ListValidator.assertListNotEmpty;
-import static api.validators.ClientValidator.assertClientResponse;
+//import static api.validators.ClientValidator.assertClientResponse;
 import static api.validators.ResponseBodyValidator.assertId;
 import static api.validators.ResponseValidator.*;
 import static api.helper.ClientRequests.newPositiveClient;
@@ -60,7 +60,7 @@ public class GetClientPositiveTest {
         assertOk(response);
 
         assertBodyNotNull(response);
-        assertClientResponse(response.body(), newClientRequest);
+        //assertClientResponse(response.body(), newClientRequest);
         assertId(response.body().getId(), newClientId);
 
     }

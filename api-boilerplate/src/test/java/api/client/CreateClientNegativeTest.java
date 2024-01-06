@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 
 import static api.helper.ClientRequests.newPositiveClient;
-import static api.validators.ClientValidator.assertClientResponse;
+//import static api.validators.ClientValidator.assertClientResponse;
 import static api.validators.ErrorResponseValidator.assertErrorResponse;
 import static api.validators.ResponseBodyValidator.*;
 import static api.validators.ResponseValidator.*;
