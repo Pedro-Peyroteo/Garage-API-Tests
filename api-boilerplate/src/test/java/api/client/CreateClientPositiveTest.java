@@ -102,6 +102,7 @@ public class CreateClientPositiveTest {
         //assertClientResponse(getResponse.body(), addedClientRequest);
         assertId(getResponse.body().getId(), newClientId);
     }
+    
 
 
 }
