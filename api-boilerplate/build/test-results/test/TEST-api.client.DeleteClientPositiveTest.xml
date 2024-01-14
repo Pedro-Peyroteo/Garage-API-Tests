@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="api.client.DeleteClientPositiveTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-14T22:30:08" hostname="DESKTOP-9IC1RJM" time="0.006">
+  <properties/>
+  <testcase name="deleteClientById" classname="api.client.DeleteClientPositiveTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"id":null,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14"}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 201 http://localhost:8080/client (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 716
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> DELETE http://localhost:8080/client/716
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 204 http://localhost:8080/client/716 (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> DELETE http://localhost:8080/client/716
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 204 http://localhost:8080/client/716 (1ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP
+]]></system-err>
+</testsuite>

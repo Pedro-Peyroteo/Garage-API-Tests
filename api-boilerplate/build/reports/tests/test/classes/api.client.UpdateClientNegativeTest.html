@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class api.client.UpdateClientNegativeTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class api.client.UpdateClientNegativeTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/api.client.html">api.client</a> &gt; UpdateClientNegativeTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">8</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.059s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">20%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="updateClientBirthDateToFutureDateTest"></a>
+<h3 class="failures">updateClientBirthDateToFutureDateTest</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientBirthDateToFutureDateTest(UpdateClientNegativeTest.java:138)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="updateClientDuplicatedNIFTest"></a>
+<h3 class="failures">updateClientDuplicatedNIFTest</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientDuplicatedNIFTest(UpdateClientNegativeTest.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="updateClientNullFieldsTest"></a>
+<h3 class="failures">updateClientNullFieldsTest</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Message is not the expected
+Expected: is &quot;Invalid body&quot;
+     but: was &quot;Invalid Phone Number&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+	at api.client.UpdateClientNegativeTest.updateClientNullFieldsTest(UpdateClientNegativeTest.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="updateClientWithBirthDateWithCurrentDateTest"></a>
+<h3 class="failures">updateClientWithBirthDateWithCurrentDateTest</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithBirthDateWithCurrentDateTest(UpdateClientNegativeTest.java:124)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="updateClientWithIdZero"></a>
+<h3 class="failures">updateClientWithIdZero</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is &lt;400&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithIdZero(UpdateClientNegativeTest.java:68)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="updateClientWithInvalidPostalCode"></a>
+<h3 class="failures">updateClientWithInvalidPostalCode</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithInvalidPostalCode(UpdateClientNegativeTest.java:164)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="updateClientWithNegativeIdTest"></a>
+<h3 class="failures">updateClientWithNegativeIdTest</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is &lt;400&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithNegativeIdTest(UpdateClientNegativeTest.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="updateNonExistentClientTest"></a>
+<h3 class="failures">updateNonExistentClientTest</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Message is not the expected
+Expected: is &quot;Client not found&quot;
+     but: was &quot;Vehicle not found&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+	at api.client.UpdateClientNegativeTest.updateNonExistentClientTest(UpdateClientNegativeTest.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">updateClientBirthDateToFutureDateTest</td>
+<td class="failures">0.006s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">updateClientDuplicatedNIFTest</td>
+<td class="failures">0.008s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">updateClientNullFieldsTest</td>
+<td class="failures">0.004s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">updateClientWithBirthDateWithCurrentDateTest</td>
+<td class="failures">0.004s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">updateClientWithIDTest</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">updateClientWithIdZero</td>
+<td class="failures">0.006s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">updateClientWithInvalidPhoneNumber</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">updateClientWithInvalidPostalCode</td>
+<td class="failures">0.006s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">updateClientWithNegativeIdTest</td>
+<td class="failures">0.005s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">updateNonExistentClientTest</td>
+<td class="failures">0.007s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (1ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 719
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/719
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-21&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 200 http://localhost:8080/client/719 (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 719
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/719
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/719 (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 720
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (1ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 721
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/720
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 200 http://localhost:8080/client/720 (1ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 720
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/720
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/720 (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (1ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 722
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/722
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 169
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:null,&quot;lastName&quot;:null,&quot;address&quot;:null,&quot;postalCode&quot;:null,&quot;city&quot;:null,&quot;country&quot;:null,&quot;phoneNumber&quot;:null,&quot;nif&quot;:null,&quot;birthDate&quot;:null,&quot;clientDate&quot;:null}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (169-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 400 http://localhost:8080/client/722 (1ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: close
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.630+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Invalid Phone Number&quot;,&quot;path&quot;:&quot;/client/722&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (134-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/722
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/722 (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 723
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/723
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-18&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 200 http://localhost:8080/client/723 (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 723
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/723
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/723 (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 724
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/724
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 233
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:2,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (233-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 400 http://localhost:8080/client/724 (1ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: close
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.660+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Id on body should be null on Update&quot;,&quot;path&quot;:&quot;/client/724&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (149-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/724
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/724 (3ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 725
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/0
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 404 http://localhost:8080/client/0 (3ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.678+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Vehicle not found&quot;,&quot;path&quot;:&quot;/client/0&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (127-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/725
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/725 (3ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 726
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/726
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 235
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:91356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (235-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 400 http://localhost:8080/client/726 (4ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: close
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.696+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Invalid Phone Number&quot;,&quot;path&quot;:&quot;/client/726&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (134-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/726
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/726 (3ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (3ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 727
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/727
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 235
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;376512a&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (235-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 200 http://localhost:8080/client/727 (3ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 727
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/727
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/727 (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (3ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 728
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/-1
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 404 http://localhost:8080/client/-1 (3ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.735+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Vehicle not found&quot;,&quot;path&quot;:&quot;/client/-1&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (128-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/728
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/728 (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; POST http://localhost:8080/client
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END POST (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (2ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 729
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (3-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/729
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/729 (1ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/729
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END PUT (236-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 404 http://localhost:8080/client/729 (3ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.751+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Vehicle not found&quot;,&quot;path&quot;:&quot;/client/729&quot;}
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (129-byte body)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/729
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END DELETE
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/729 (1ms)
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at 14/01/2024, 22:30:08</p>
+</div>
+</div>
+</body>
+</html>

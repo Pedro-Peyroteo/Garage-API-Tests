@@ -1,5 +1,6 @@
 package api.client;
 
+import api.mappings.ErrorResponse;
 import api.mappings.client.ClientRequest;
 import api.mappings.client.ClientResponse;
 import api.retrofit.garage.Client;
@@ -7,18 +8,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import retrofit2.Response;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.sql.Date;
 import java.time.LocalDate;
 
 import static api.helper.ClientRequests.newPositiveClient;
-import static api.retrofit.garage.Client.createClient;
-//import static api.validators.ClientValidator.assertClientResponse;
-import static api.validators.ResponseBodyValidator.assertBodyNotNull;
-import static api.validators.ResponseBodyValidator.assertId;
+import static api.helper.ErrorClientResponses.errorClientInvalidBirthDate;
+import static api.retrofit.garage.Error.getErrorResponse;
+import static api.validators.ErrorResponseValidator.assertErrorResponse;
+import static api.validators.ResponseBodyValidator.*;
 import static api.validators.ResponseValidator.*;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
 
 public class CreateClientPositiveTest {
     private Integer newClientId;
@@ -33,7 +33,7 @@ public class CreateClientPositiveTest {
         newClientId = null;
     }
 
-    @Test(description = "Create client with success")
+    @Test(description = "ID 0010 - Create client with success")
     public void createClientTest() {
         // Dados do cliente a serem enviados na requisição
         ClientRequest addedClientRequest = newPositiveClient();
@@ -50,7 +50,17 @@ public class CreateClientPositiveTest {
         assertId(getResponse.body().getId(), newClientId);
     }
 
-    @Test(description = "Create client with the birth date set to current date")
+    @Test(description = "ID 0002 - Create client with the birth date set to a past day")
+    public void createClientWithBirthDateLessThanToday() throws IOException {
+        ClientRequest addedClientRequest = newPositiveClient();
+        addedClientRequest.setBirthDate(new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now().minusYears(18))));
+
+        Response<Integer> createResponse = Client.createClient(addedClientRequest);
+        assertBodyNull(createResponse);
+        assertOk(createResponse);
+    }
+
+    @Test(description = "ID 0011 - Create client with the birth date set to current date")
     public void createClientWithBirthDateSetToCurrentDateTest(){
         ClientRequest addedClientRequest = newPositiveClient();
         addedClientRequest.setBirthDate(new SimpleDateFormat("yyyy-MM-dd").format(new Date(System.currentTimeMillis())));
@@ -68,8 +78,7 @@ public class CreateClientPositiveTest {
     }
 
 
-
-    @Test(description = "Create client with the client date set to current date")
+    @Test(description = "ID 0012 - Create client with the client date set to current date")
     public void createClientWithClientDateSetToCurrentDateTest(){
         ClientRequest addedClientRequest = newPositiveClient();
         addedClientRequest.setClientDate(new SimpleDateFormat("yyyy-MM-dd").format(new Date(System.currentTimeMillis())));
@@ -86,7 +95,7 @@ public class CreateClientPositiveTest {
         assertId(getResponse.body().getId(), newClientId);
     }
 
-    @Test(description = "Create client with the client date set to past date")
+    @Test(description = "ID 0013 - Create client with the client date set to past date")
     public void createClientWithClientDateSetToPastDateTest(){
         ClientRequest addedClientRequest = newPositiveClient();
         addedClientRequest.setClientDate(new SimpleDateFormat("yyyy-MM-dd").format(Date.valueOf(LocalDate.now().minusDays(7))));

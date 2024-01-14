@@ -15,7 +15,7 @@ import static api.validators.ResponseValidator.*;
 
 public class GetClientNegativeTest
 {
-    @Test(description = "Get a non-existent client by id")
+    @Test(description = "ID 0018 - Get a non-existent client by id")
     public void getNonExistentClientByIdTest() {
         Response<List<ClientResponse>> getResponse = Client.getAllClients();
         assertOk(getResponse);
@@ -43,15 +43,15 @@ public class GetClientNegativeTest
         assertNotFound(response);
     }*/
 
-    @Test(description = "Get a client with the id 0")
+    @Test(description = "ID 0019 - Get a client with the id 0")
     public void getClientByIdZeroTest(){
         Response<ClientResponse> response = Client.getClientByid(0);
         assertNotFound(response);
     }
 
-    @Test(description = "Get client with a negative id")
+    @Test(description = "ID 0020 - Get client with a negative id")
     public void getClientWithNegativeIdTest(){
         Response<ClientResponse> response = Client.getClientByid(-1);
-        assertNotFound(response);
+        assertBadRequest(response);
     }
 }

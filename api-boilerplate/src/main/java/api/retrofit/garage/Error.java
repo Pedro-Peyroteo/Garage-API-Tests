@@ -11,15 +11,13 @@ import retrofit2.Retrofit;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 
+/**
+ * Can use this class to convert normal body to errorBody to check errors
+ */
 public class Error {
-
-    /**
-     * Can use this class to convert normal body to errorBody to check errors
-     */
-
     private static final Retrofit retrofit = new RetrofitBuilder().getRetrofit();
 
-    public static ErrorResponse getErrorsResponse(Response response) throws IOException {
+    public static ErrorResponse getErrorResponse(Response response) throws IOException {
         Converter<ResponseBody, ErrorResponse> errorConverter =
                 retrofit.responseBodyConverter(ErrorResponse.class, new Annotation[0]);
         return errorConverter.convert(response.errorBody());

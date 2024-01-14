@@ -22,6 +22,9 @@ public interface ClientCalls {
     @POST(CLIENT)
     Call<Integer> createClient(@Body ClientRequest client);
 
+    @PUT(CLIENT_ID)
+    Call<Integer> updateClient(@Path(ID) Integer clientId, @Body ClientRequest client);
+
     @DELETE(CLIENT_ID)
     Call<Void> deleteClient(@Path(ID) Integer clientId);  // Call <void> pois o metodo retorna null
 }

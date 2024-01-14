@@ -34,7 +34,6 @@ public class GetClientPositiveTest {
 
     @AfterMethod
     public void cleanUp(){
-
         Response<Void> response = Client.deleteClient(newClientId);
         assertNoContent(response);
 
@@ -43,7 +42,7 @@ public class GetClientPositiveTest {
     }
 
 
-    @Test(description = "Get all clients")
+    @Test(description = "ID 0021 - Get all clients")
     public void getAllClientTest(){
         Response<List<ClientResponse>> response = getAllClients();
         assertOk(response);
@@ -53,7 +52,7 @@ public class GetClientPositiveTest {
         assertListHasSize(response.body(), greaterThanOrEqualTo(1));
     }
 
-    @Test(description = "Get client by id :) ")
+    @Test(description = "ID 0022 - Get client by id")
     public void getClientByIdTest()
     {
         Response<ClientResponse> response = Client.getClientByid(newClientId);

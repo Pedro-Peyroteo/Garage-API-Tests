@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="api.client.GetClientNegativeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-01-14T19:07:50" hostname="DESKTOP-9IC1RJM" time="0.043">
+  <properties/>
+  <testcase name="getClientByIdZeroTest" classname="api.client.GetClientNegativeTest" time="0.005"/>
+  <testcase name="getClientWithNegativeIdTest" classname="api.client.GetClientNegativeTest" time="0.007"/>
+  <testcase name="getNonExistentClientByIdTest" classname="api.client.GetClientNegativeTest" time="0.03"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> GET http://localhost:8080/client/0
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END GET
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 404 http://localhost:8080/client/0 (3ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"timestamp":"2024-01-14T19:07:50.425+00:00","status":404,"error":"Not Found","message":"Client not found","path":"/client/0"}
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (126-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> GET http://localhost:8080/client/-1
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END GET
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 404 http://localhost:8080/client/-1 (4ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"timestamp":"2024-01-14T19:07:50.432+00:00","status":404,"error":"Not Found","message":"Client not found","path":"/client/-1"}
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (127-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> GET http://localhost:8080/client
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END GET
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 200 http://localhost:8080/client (16ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: [{"id":1,"firstName":"Afonso","lastName":"Silva","address":"Rua da Esquina","postalCode":"3810-700","city":"Aveiro","country":"Portugal","phoneNumber":966111222,"nif":212212212,"birthDate":"1983-01-01","clientDate":"2001-05-05","vehicles":[{"id":1,"client":1,"brand":"Fiat","model":"Punto","plateYear":1999,"type":"Hatchback","plate":"ZE-10-20","active":true},{"id":2,"client":1,"brand":"Opel","model":"Corsa","plateYear":2002,"type":"Hatchback","plate":"34-CB-45","active":true}]},{"id":2,"firstName":"Maria","lastName":"Lopes","address":"Avenida Principal","postalCode":"4350334","city":"Porto","country":"Portugal","phoneNumber":911222333,"nif":275713741,"birthDate":"2025-09-12","clientDate":"2010-07-01","vehicles":[{"id":3,"client":2,"brand":"Peugeot","model":"504","plateYear":1988,"type":"Van","plate":"PI-88-60","active":false}]},{"id":148,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":158,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":159,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":172,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":184,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":185,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":198,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":210,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":211,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":224,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":236,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":237,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":250,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":262,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]},{"id":263,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]}]
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (4589-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> GET http://localhost:8080/client/264
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END GET
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 404 http://localhost:8080/client/264 (3ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"timestamp":"2024-01-14T19:07:50.463+00:00","status":404,"error":"Not Found","message":"Client not found","path":"/client/264"}
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (128-byte body)
+]]></system-err>
+</testsuite>

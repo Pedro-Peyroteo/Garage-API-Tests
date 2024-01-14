@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="api.client.UpdateClientPositiveTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-01-14T19:07:50" hostname="DESKTOP-9IC1RJM" time="0.043">
+  <properties/>
+  <testcase name="updateClientBirthDateToFutureDateTest" classname="api.client.UpdateClientPositiveTest" time="0.017"/>
+  <testcase name="updateClientTest" classname="api.client.UpdateClientPositiveTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> POST http://localhost:8080/client
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"id":null,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14"}
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END POST (236-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 201 http://localhost:8080/client (4ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 286
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (3-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> PUT http://localhost:8080/client/286
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"id":null,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-21","clientDate":"2024-01-14"}
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END PUT (236-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 200 http://localhost:8080/client/286 (5ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 286
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (3-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> GET http://localhost:8080/client/286
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END GET
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 200 http://localhost:8080/client/286 (4ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"id":286,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-21","clientDate":"2024-01-14","vehicles":[]}
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (249-byte body)
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting api/validators/ClientValidator.
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at api.client.UpdateClientPositiveTest.updateClientBirthDateToFutureDateTest(UpdateClientPositiveTest.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.io.IOException: Error while instrumenting api/validators/ClientValidator.
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrumentError(Instrumenter.java:160)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:110)
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 55 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 63
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:196)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:177)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:163)
+	at org.jacoco.agent.rt.internal_3570298.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:76)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:108)
+	... 56 more
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> DELETE http://localhost:8080/client/286
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END DELETE
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 204 http://localhost:8080/client/286 (4ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> POST http://localhost:8080/client
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 236
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"id":null,"firstName":"Pedro","lastName":"Peyroteo","address":"Rua do Vale, 50","postalCode":"3865-100","city":"Estarreja","country":"Portugal","phoneNumber":910356180,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14"}
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END POST (236-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 201 http://localhost:8080/client (4ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 287
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (3-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> PUT http://localhost:8080/client/287
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=UTF-8
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Length: 232
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"id":null,"firstName":"Jose","lastName":"Marques","address":"Rua das Barrocas","postalCode":"3587-008","city":"Agueda","country":"Portugal","phoneNumber":916234785,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14"}
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END PUT (232-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 200 http://localhost:8080/client/287 (4ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 287
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (3-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> GET http://localhost:8080/client/287
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END GET
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 200 http://localhost:8080/client/287 (3ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {"id":287,"firstName":"Jose","lastName":"Marques","address":"Rua das Barrocas","postalCode":"3587-008","city":"Agueda","country":"Portugal","phoneNumber":916234785,"nif":275713741,"birthDate":"2024-01-14","clientDate":"2024-01-14","vehicles":[]}
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (245-byte body)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> DELETE http://localhost:8080/client/287
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --> END DELETE
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- 204 http://localhost:8080/client/287 (3ms)
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 19:07:49 GMT
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+jan. 14, 2024 7:07:50 DA TARDE okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP
+]]></system-err>
+</testsuite>
