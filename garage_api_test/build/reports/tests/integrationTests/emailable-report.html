@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Gradle suite</th></tr>
+<tr><td><a href="#t0">Gradle test</a></td><td class="num">23</td><td class="num">0</td><td class="num">0</td><td class="num attn">11</td><td class="num">2 200</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Gradle suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Gradle test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">api.client.DeleteClientNegativeTest</td><td><a href="#m0">deleteClientWithId0</a></td><td rowspan="1">1705259270375</td><td rowspan="1">9</td></tr><tr class="failedeven"><td><a href="#m1">deleteClientWithNegativeId</a></td><td rowspan="1">1705259270386</td><td rowspan="1">6</td></tr><tr class="failedeven"><td><a href="#m2">deleteNonExistentClientByIdTest</a></td><td rowspan="1">1705259270393</td><td rowspan="1">12</td></tr><tr class="failedodd"><td rowspan="8">api.client.UpdateClientNegativeTest</td><td><a href="#m3">updateClientDuplicatedNIFTest</a></td><td rowspan="1">1705259270549</td><td rowspan="1">15</td></tr><tr class="failedodd"><td><a href="#m4">updateClientNullFieldsTest</a></td><td rowspan="1">1705259270579</td><td rowspan="1">23</td></tr><tr class="failedodd"><td><a href="#m5">updateClientWithBirthDateWithCurrentDateTest</a></td><td rowspan="1">1705259270616</td><td rowspan="1">9</td></tr><tr class="failedodd"><td><a href="#m6">updateClientWithClientDateWithCurrentDateTest</a></td><td rowspan="1">1705259270640</td><td rowspan="1">10</td></tr><tr class="failedodd"><td><a href="#m7">updateClientWithIdZero</a></td><td rowspan="1">1705259270683</td><td rowspan="1">6</td></tr><tr class="failedodd"><td><a href="#m8">updateClientWithInvalidPostalCode</a></td><td rowspan="1">1705259270734</td><td rowspan="1">7</td></tr><tr class="failedodd"><td><a href="#m9">updateClientWithNegativeIdTest</a></td><td rowspan="1">1705259270756</td><td rowspan="1">7</td></tr><tr class="failedodd"><td><a href="#m10">updateNonExistentClientTest</a></td><td rowspan="1">1705259270779</td><td rowspan="1">22</td></tr><tr><th colspan="4">Gradle test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">api.client.CreateClientNegativeTest</td><td><a href="#m11">createClientDuplicatedNIF</a></td><td rowspan="1">1705259268737</td><td rowspan="1">1312</td></tr><tr class="passedeven"><td><a href="#m12">createClientNullFieldsTest</a></td><td rowspan="1">1705259270068</td><td rowspan="1">13</td></tr><tr class="passedeven"><td><a href="#m13">createClientWithBirthDateAfterClientDate</a></td><td rowspan="1">1705259270082</td><td rowspan="1">111</td></tr><tr class="passedeven"><td><a href="#m14">createClientWithBirthDateLessThanToday</a></td><td rowspan="1">1705259270213</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m15">createClientWithBirthDateSetToFutureDateTest</a></td><td rowspan="1">1705259270222</td><td rowspan="1">19</td></tr><tr class="passedeven"><td><a href="#m16">createClientWithClientDateSetToFutureDateTest</a></td><td rowspan="1">1705259270251</td><td rowspan="1">17</td></tr><tr class="passedeven"><td><a href="#m17">createClientWithIDTest</a></td><td rowspan="1">1705259270275</td><td rowspan="1">11</td></tr><tr class="passedeven"><td><a href="#m18">createClientWithInvalidPhoneNumber</a></td><td rowspan="1">1705259270286</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m19">createClientWithInvalidPostalCode</a></td><td rowspan="1">1705259270294</td><td rowspan="1">7</td></tr><tr class="passedodd"><td rowspan="4">api.client.CreateClientPositiveTest</td><td><a href="#m20">createClientTest</a></td><td rowspan="1">1705259270303</td><td rowspan="1">12</td></tr><tr class="passedodd"><td><a href="#m21">createClientWithBirthDateSetToCurrentDateTest</a></td><td rowspan="1">1705259270321</td><td rowspan="1">11</td></tr><tr class="passedodd"><td><a href="#m22">createClientWithClientDateSetToCurrentDateTest</a></td><td rowspan="1">1705259270339</td><td rowspan="1">12</td></tr><tr class="passedodd"><td><a href="#m23">createClientWithClientDateSetToPastDateTest</a></td><td rowspan="1">1705259270357</td><td rowspan="1">12</td></tr><tr class="passedeven"><td rowspan="1">api.client.DeleteClientPositiveTest</td><td><a href="#m24">deleteClientById</a></td><td rowspan="1">1705259270413</td><td rowspan="1">4</td></tr><tr class="passedodd"><td rowspan="3">api.client.GetClientNegativeTest</td><td><a href="#m25">getClientByIdZeroTest</a></td><td rowspan="1">1705259270422</td><td rowspan="1">5</td></tr><tr class="passedodd"><td><a href="#m26">getClientWithNegativeIdTest</a></td><td rowspan="1">1705259270428</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m27">getNonExistentClientByIdTest</a></td><td rowspan="1">1705259270435</td><td rowspan="1">30</td></tr><tr class="passedeven"><td rowspan="2">api.client.GetClientPositiveTest</td><td><a href="#m28">getAllClientTest</a></td><td rowspan="1">1705259270474</td><td rowspan="1">40</td></tr><tr class="passedeven"><td><a href="#m29">getClientByIdTest</a></td><td rowspan="1">1705259270528</td><td rowspan="1">5</td></tr><tr class="passedodd"><td rowspan="2">api.client.UpdateClientNegativeTest</td><td><a href="#m30">updateClientWithIDTest</a></td><td rowspan="1">1705259270663</td><td rowspan="1">5</td></tr><tr class="passedodd"><td><a href="#m31">updateClientWithInvalidPhoneNumber</a></td><td rowspan="1">1705259270711</td><td rowspan="1">9</td></tr><tr class="passedeven"><td rowspan="2">api.client.UpdateClientPositiveTest</td><td><a href="#m32">updateClientBirthDateToFutureDateTest</a></td><td rowspan="1">1705259270816</td><td rowspan="1">17</td></tr><tr class="passedeven"><td><a href="#m33">updateClientTest</a></td><td rowspan="1">1705259270847</td><td rowspan="1">12</td></tr></tbody>
+</table>
+<h2>Gradle test</h2><h3 id="m0">api.client.DeleteClientNegativeTest#deleteClientWithId0</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is &lt;404&gt;
+     but: was &lt;204&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+	at api.client.DeleteClientNegativeTest.deleteClientWithId0(DeleteClientNegativeTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.client.DeleteClientNegativeTest#deleteClientWithNegativeId</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is &lt;404&gt;
+     but: was &lt;204&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+	at api.client.DeleteClientNegativeTest.deleteClientWithNegativeId(DeleteClientNegativeTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.client.DeleteClientNegativeTest#deleteNonExistentClientByIdTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is &lt;404&gt;
+     but: was &lt;204&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+	at api.client.DeleteClientNegativeTest.deleteNonExistentClientByIdTest(DeleteClientNegativeTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.client.UpdateClientNegativeTest#updateClientDuplicatedNIFTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientDuplicatedNIFTest(UpdateClientNegativeTest.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">api.client.UpdateClientNegativeTest#updateClientNullFieldsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Message is not the expected
+Expected: is &quot;Invalid body&quot;
+     but: was &quot;Invalid Phone Number&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+	at api.client.UpdateClientNegativeTest.updateClientNullFieldsTest(UpdateClientNegativeTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">api.client.UpdateClientNegativeTest#updateClientWithBirthDateWithCurrentDateTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithBirthDateWithCurrentDateTest(UpdateClientNegativeTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">api.client.UpdateClientNegativeTest#updateClientWithClientDateWithCurrentDateTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithClientDateWithCurrentDateTest(UpdateClientNegativeTest.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">api.client.UpdateClientNegativeTest#updateClientWithIdZero</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is &lt;400&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithIdZero(UpdateClientNegativeTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">api.client.UpdateClientNegativeTest#updateClientWithInvalidPostalCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithInvalidPostalCode(UpdateClientNegativeTest.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">api.client.UpdateClientNegativeTest#updateClientWithNegativeIdTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is &lt;400&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithNegativeIdTest(UpdateClientNegativeTest.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">api.client.UpdateClientNegativeTest#updateNonExistentClientTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Message is not the expected
+Expected: is &quot;Client not found&quot;
+     but: was &quot;Vehicle not found&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+	at api.client.UpdateClientNegativeTest.updateNonExistentClientTest(UpdateClientNegativeTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">api.client.CreateClientNegativeTest#createClientDuplicatedNIF</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">api.client.CreateClientNegativeTest#createClientNullFieldsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">api.client.CreateClientNegativeTest#createClientWithBirthDateAfterClientDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">api.client.CreateClientNegativeTest#createClientWithBirthDateLessThanToday</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">api.client.CreateClientNegativeTest#createClientWithBirthDateSetToFutureDateTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">api.client.CreateClientNegativeTest#createClientWithClientDateSetToFutureDateTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">api.client.CreateClientNegativeTest#createClientWithIDTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">api.client.CreateClientNegativeTest#createClientWithInvalidPhoneNumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">api.client.CreateClientNegativeTest#createClientWithInvalidPostalCode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">api.client.CreateClientPositiveTest#createClientTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">api.client.CreateClientPositiveTest#createClientWithBirthDateSetToCurrentDateTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">api.client.CreateClientPositiveTest#createClientWithClientDateSetToCurrentDateTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">api.client.CreateClientPositiveTest#createClientWithClientDateSetToPastDateTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">api.client.DeleteClientPositiveTest#deleteClientById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">api.client.GetClientNegativeTest#getClientByIdZeroTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">api.client.GetClientNegativeTest#getClientWithNegativeIdTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">api.client.GetClientNegativeTest#getNonExistentClientByIdTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">api.client.GetClientPositiveTest#getAllClientTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">api.client.GetClientPositiveTest#getClientByIdTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">api.client.UpdateClientNegativeTest#updateClientWithIDTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">api.client.UpdateClientNegativeTest#updateClientWithInvalidPhoneNumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">api.client.UpdateClientPositiveTest#updateClientBirthDateToFutureDateTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">api.client.UpdateClientPositiveTest#updateClientTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

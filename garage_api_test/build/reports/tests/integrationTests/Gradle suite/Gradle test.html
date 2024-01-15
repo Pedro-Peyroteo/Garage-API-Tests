@@ -1,0 +1,884 @@
+<html>
+<head>
+<title>TestNG:  Gradle test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Gradle test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/11/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 14 19:07:48 WET 2024</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2200 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.client.DeleteClientNegativeTest.deleteClientWithId0()'><b>deleteClientWithId0</b><br>Test class: api.client.DeleteClientNegativeTest<br>Test method: ID 0016 - Delete client with ID equals 0</td>
+<td><div><pre>java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is &lt;404&gt;
+     but: was &lt;204&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+	at api.client.DeleteClientNegativeTest.deleteClientWithId0(DeleteClientNegativeTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1399693980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1399693980'><pre>java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is &lt;404&gt;
+     but: was &lt;204&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+	at api.client.DeleteClientNegativeTest.deleteClientWithId0(DeleteClientNegativeTest.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.DeleteClientNegativeTest@63998bf4</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateClientDuplicatedNIFTest()'><b>updateClientDuplicatedNIFTest</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID 0027 - Update client with Duplicated NIF</td>
+<td><div><pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientDuplicatedNIFTest(UpdateClientNegativeTest.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace501170909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace501170909'><pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientDuplicatedNIFTest(UpdateClientNegativeTest.java:109)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateClientNullFieldsTest()'><b>updateClientNullFieldsTest</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID 0026 - Update client with null fields</td>
+<td><div><pre>java.lang.AssertionError: Message is not the expected
+Expected: is &quot;Invalid body&quot;
+     but: was &quot;Invalid Phone Number&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+	at api.client.UpdateClientNegativeTest.updateClientNullFieldsTest(UpdateClientNegativeTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace304406966", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace304406966'><pre>java.lang.AssertionError: Message is not the expected
+Expected: is &quot;Invalid body&quot;
+     but: was &quot;Invalid Phone Number&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+	at api.client.UpdateClientNegativeTest.updateClientNullFieldsTest(UpdateClientNegativeTest.java:91)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateNonExistentClientTest()'><b>updateNonExistentClientTest</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID  0023 - Update non Existent client</td>
+<td><div><pre>java.lang.AssertionError: Message is not the expected
+Expected: is &quot;Client not found&quot;
+     but: was &quot;Vehicle not found&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+	at api.client.UpdateClientNegativeTest.updateNonExistentClientTest(UpdateClientNegativeTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2118829464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2118829464'><pre>java.lang.AssertionError: Message is not the expected
+Expected: is &quot;Client not found&quot;
+     but: was &quot;Vehicle not found&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+	at api.client.UpdateClientNegativeTest.updateNonExistentClientTest(UpdateClientNegativeTest.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateClientWithIdZero()'><b>updateClientWithIdZero</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID  0024 - Update client with id 0</td>
+<td><div><pre>java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is &lt;400&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithIdZero(UpdateClientNegativeTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace569974522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace569974522'><pre>java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is &lt;400&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithIdZero(UpdateClientNegativeTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateClientWithBirthDateWithCurrentDateTest()'><b>updateClientWithBirthDateWithCurrentDateTest</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID 0028 - Update client with birth date with current date</td>
+<td><div><pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithBirthDateWithCurrentDateTest(UpdateClientNegativeTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1252819402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1252819402'><pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithBirthDateWithCurrentDateTest(UpdateClientNegativeTest.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateClientWithClientDateWithCurrentDateTest()'><b>updateClientWithClientDateWithCurrentDateTest</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID 0029 - Update client with client date with current date</td>
+<td><div><pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithClientDateWithCurrentDateTest(UpdateClientNegativeTest.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace269016862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace269016862'><pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithClientDateWithCurrentDateTest(UpdateClientNegativeTest.java:133)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.DeleteClientNegativeTest.deleteClientWithNegativeId()'><b>deleteClientWithNegativeId</b><br>Test class: api.client.DeleteClientNegativeTest<br>Test method: ID 0014 - Delete client with negative ID</td>
+<td><div><pre>java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is &lt;404&gt;
+     but: was &lt;204&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+	at api.client.DeleteClientNegativeTest.deleteClientWithNegativeId(DeleteClientNegativeTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1615625883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1615625883'><pre>java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is &lt;404&gt;
+     but: was &lt;204&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+	at api.client.DeleteClientNegativeTest.deleteClientWithNegativeId(DeleteClientNegativeTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.DeleteClientNegativeTest@63998bf4</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateClientWithNegativeIdTest()'><b>updateClientWithNegativeIdTest</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID 0025 - Update client with negative id</td>
+<td><div><pre>java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is &lt;400&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithNegativeIdTest(UpdateClientNegativeTest.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1998042272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1998042272'><pre>java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is &lt;400&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithNegativeIdTest(UpdateClientNegativeTest.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateClientWithInvalidPostalCode()'><b>updateClientWithInvalidPostalCode</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID 0031 - Update Client with invalid Postal Code </td>
+<td><div><pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithInvalidPostalCode(UpdateClientNegativeTest.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1884568750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1884568750'><pre>java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+	at api.client.UpdateClientNegativeTest.updateClientWithInvalidPostalCode(UpdateClientNegativeTest.java:157)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.DeleteClientNegativeTest.deleteNonExistentClientByIdTest()'><b>deleteNonExistentClientByIdTest</b><br>Test class: api.client.DeleteClientNegativeTest<br>Test method: ID 0015 - Delete a non-existent client by id</td>
+<td><div><pre>java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is &lt;404&gt;
+     but: was &lt;204&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+	at api.client.DeleteClientNegativeTest.deleteNonExistentClientByIdTest(DeleteClientNegativeTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1635892298", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1635892298'><pre>java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is &lt;404&gt;
+     but: was &lt;204&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+	at api.client.DeleteClientNegativeTest.deleteNonExistentClientByIdTest(DeleteClientNegativeTest.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre></div></td>
+<td>0</td>
+<td>api.client.DeleteClientNegativeTest@63998bf4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.client.CreateClientNegativeTest.createClientWithBirthDateAfterClientDate()'><b>createClientWithBirthDateAfterClientDate</b><br>Test class: api.client.CreateClientNegativeTest<br>Test method: ID 0005 - Create client with the birth date set to after of client date achei que ia passar </td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientNegativeTest@4ad4936c</td></tr>
+<tr>
+<td title='api.client.CreateClientNegativeTest.createClientWithInvalidPostalCode()'><b>createClientWithInvalidPostalCode</b><br>Test class: api.client.CreateClientNegativeTest<br>Test method: ID 0008 - Create client with Invalid postal code</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientNegativeTest@4ad4936c</td></tr>
+<tr>
+<td title='api.client.UpdateClientPositiveTest.updateClientBirthDateToFutureDateTest()'><b>updateClientBirthDateToFutureDateTest</b><br>Test class: api.client.UpdateClientPositiveTest<br>Test method: ID 0034 - Updade client to future date</td>
+<td></td>
+<td>0</td>
+<td>api.client.UpdateClientPositiveTest@62a8fd44</td></tr>
+<tr>
+<td title='api.client.GetClientNegativeTest.getNonExistentClientByIdTest()'><b>getNonExistentClientByIdTest</b><br>Test class: api.client.GetClientNegativeTest<br>Test method: ID 0018 - Get a non-existent client by id</td>
+<td></td>
+<td>0</td>
+<td>api.client.GetClientNegativeTest@61942c1</td></tr>
+<tr>
+<td title='api.client.GetClientPositiveTest.getAllClientTest()'><b>getAllClientTest</b><br>Test class: api.client.GetClientPositiveTest<br>Test method: ID 0021 - Get all clients</td>
+<td></td>
+<td>0</td>
+<td>api.client.GetClientPositiveTest@6f63c44f</td></tr>
+<tr>
+<td title='api.client.CreateClientNegativeTest.createClientWithBirthDateLessThanToday()'><b>createClientWithBirthDateLessThanToday</b><br>Test class: api.client.CreateClientNegativeTest<br>Test method: ID 0002 - Create client with the birth date set to a past day</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientNegativeTest@4ad4936c</td></tr>
+<tr>
+<td title='api.client.DeleteClientPositiveTest.deleteClientById()'><b>deleteClientById</b><br>Test class: api.client.DeleteClientPositiveTest<br>Test method: ID 0017 - Delete client by ID</td>
+<td></td>
+<td>0</td>
+<td>api.client.DeleteClientPositiveTest@7e0b9178</td></tr>
+<tr>
+<td title='api.client.CreateClientNegativeTest.createClientWithClientDateSetToFutureDateTest()'><b>createClientWithClientDateSetToFutureDateTest</b><br>Test class: api.client.CreateClientNegativeTest<br>Test method: ID 0003 - Create client with the client date set to future date</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientNegativeTest@4ad4936c</td></tr>
+<tr>
+<td title='api.client.CreateClientNegativeTest.createClientWithInvalidPhoneNumber()'><b>createClientWithInvalidPhoneNumber</b><br>Test class: api.client.CreateClientNegativeTest<br>Test method: ID 0009 - Create Client with invlaid phone number</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientNegativeTest@4ad4936c</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateClientWithIDTest()'><b>updateClientWithIDTest</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID 0030 - Update client with ID</td>
+<td></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.GetClientNegativeTest.getClientByIdZeroTest()'><b>getClientByIdZeroTest</b><br>Test class: api.client.GetClientNegativeTest<br>Test method: ID 0019 - Get a client with the id 0</td>
+<td></td>
+<td>0</td>
+<td>api.client.GetClientNegativeTest@61942c1</td></tr>
+<tr>
+<td title='api.client.GetClientNegativeTest.getClientWithNegativeIdTest()'><b>getClientWithNegativeIdTest</b><br>Test class: api.client.GetClientNegativeTest<br>Test method: ID 0020 - Get client with a negative id</td>
+<td></td>
+<td>0</td>
+<td>api.client.GetClientNegativeTest@61942c1</td></tr>
+<tr>
+<td title='api.client.CreateClientPositiveTest.createClientTest()'><b>createClientTest</b><br>Test class: api.client.CreateClientPositiveTest<br>Test method: ID 0010 - Create client with success</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientPositiveTest@3bd55d8</td></tr>
+<tr>
+<td title='api.client.CreateClientPositiveTest.createClientWithClientDateSetToCurrentDateTest()'><b>createClientWithClientDateSetToCurrentDateTest</b><br>Test class: api.client.CreateClientPositiveTest<br>Test method: ID 0012 - Create client with the client date set to current date</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientPositiveTest@3bd55d8</td></tr>
+<tr>
+<td title='api.client.CreateClientPositiveTest.createClientWithClientDateSetToPastDateTest()'><b>createClientWithClientDateSetToPastDateTest</b><br>Test class: api.client.CreateClientPositiveTest<br>Test method: ID 0013 - Create client with the client date set to past date</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientPositiveTest@3bd55d8</td></tr>
+<tr>
+<td title='api.client.UpdateClientPositiveTest.updateClientTest()'><b>updateClientTest</b><br>Test class: api.client.UpdateClientPositiveTest<br>Test method: ID 0033 - Update client with success</td>
+<td></td>
+<td>0</td>
+<td>api.client.UpdateClientPositiveTest@62a8fd44</td></tr>
+<tr>
+<td title='api.client.UpdateClientNegativeTest.updateClientWithInvalidPhoneNumber()'><b>updateClientWithInvalidPhoneNumber</b><br>Test class: api.client.UpdateClientNegativeTest<br>Test method: ID 0032 - Update client with invalid phone number</td>
+<td></td>
+<td>0</td>
+<td>api.client.UpdateClientNegativeTest@408a247c</td></tr>
+<tr>
+<td title='api.client.CreateClientNegativeTest.createClientDuplicatedNIF()'><b>createClientDuplicatedNIF</b><br>Test class: api.client.CreateClientNegativeTest<br>Test method: ID 0006 - Create client with duplicated NIF</td>
+<td></td>
+<td>1</td>
+<td>api.client.CreateClientNegativeTest@4ad4936c</td></tr>
+<tr>
+<td title='api.client.CreateClientNegativeTest.createClientWithIDTest()'><b>createClientWithIDTest</b><br>Test class: api.client.CreateClientNegativeTest<br>Test method: ID 0007 - Create client with id</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientNegativeTest@4ad4936c</td></tr>
+<tr>
+<td title='api.client.GetClientPositiveTest.getClientByIdTest()'><b>getClientByIdTest</b><br>Test class: api.client.GetClientPositiveTest<br>Test method: ID 0022 - Get client by id :) </td>
+<td></td>
+<td>0</td>
+<td>api.client.GetClientPositiveTest@6f63c44f</td></tr>
+<tr>
+<td title='api.client.CreateClientNegativeTest.createClientNullFieldsTest()'><b>createClientNullFieldsTest</b><br>Test class: api.client.CreateClientNegativeTest<br>Test method: ID 0001 - Create client with null fields</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientNegativeTest@4ad4936c</td></tr>
+<tr>
+<td title='api.client.CreateClientNegativeTest.createClientWithBirthDateSetToFutureDateTest()'><b>createClientWithBirthDateSetToFutureDateTest</b><br>Test class: api.client.CreateClientNegativeTest<br>Test method: ID 0004 - Create client with the birth date set to a future date</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientNegativeTest@4ad4936c</td></tr>
+<tr>
+<td title='api.client.CreateClientPositiveTest.createClientWithBirthDateSetToCurrentDateTest()'><b>createClientWithBirthDateSetToCurrentDateTest</b><br>Test class: api.client.CreateClientPositiveTest<br>Test method: ID 0011 - Create client with the birth date set to current date</td>
+<td></td>
+<td>0</td>
+<td>api.client.CreateClientPositiveTest@3bd55d8</td></tr>
+</table><p>
+</body>
+</html>

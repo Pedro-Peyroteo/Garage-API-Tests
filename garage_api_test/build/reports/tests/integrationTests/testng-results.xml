@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="34" passed="23" failed="11" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-14T19:07:48 WET" name="Gradle suite" finished-at="2024-01-14T19:07:50 WET" duration-ms="2200">
+    <groups>
+    </groups>
+    <test started-at="2024-01-14T19:07:48 WET" name="Gradle test" finished-at="2024-01-14T19:07:50 WET" duration-ms="2200">
+      <class name="api.client.DeleteClientPositiveTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.DeleteClientPositiveTest@7e0b9178]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deleteClientById()[pri:0, instance:api.client.DeleteClientPositiveTest@7e0b9178]" started-at="2024-01-14T19:07:50 WET" name="deleteClientById" description="ID 0017 - Delete client by ID" finished-at="2024-01-14T19:07:50 WET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteClientById -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.DeleteClientPositiveTest@7e0b9178]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- api.client.DeleteClientPositiveTest -->
+      <class name="api.client.GetClientPositiveTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:api.client.GetClientPositiveTest@6f63c44f]" started-at="2024-01-14T19:07:50 WET" name="setUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getAllClientTest()[pri:0, instance:api.client.GetClientPositiveTest@6f63c44f]" started-at="2024-01-14T19:07:50 WET" name="getAllClientTest" description="ID 0021 - Get all clients" finished-at="2024-01-14T19:07:50 WET" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClientTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.GetClientPositiveTest@6f63c44f]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:api.client.GetClientPositiveTest@6f63c44f]" started-at="2024-01-14T19:07:50 WET" name="setUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getClientByIdTest()[pri:0, instance:api.client.GetClientPositiveTest@6f63c44f]" started-at="2024-01-14T19:07:50 WET" name="getClientByIdTest" description="ID 0022 - Get client by id :) " finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClientByIdTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.GetClientPositiveTest@6f63c44f]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- api.client.GetClientPositiveTest -->
+      <class name="api.client.UpdateClientPositiveTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientPositiveTest@62a8fd44]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientBirthDateToFutureDateTest()[pri:0, instance:api.client.UpdateClientPositiveTest@62a8fd44]" started-at="2024-01-14T19:07:50 WET" name="updateClientBirthDateToFutureDateTest" description="ID 0034 - Updade client to future date" finished-at="2024-01-14T19:07:50 WET" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientBirthDateToFutureDateTest -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientPositiveTest@62a8fd44]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientPositiveTest@62a8fd44]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientTest()[pri:0, instance:api.client.UpdateClientPositiveTest@62a8fd44]" started-at="2024-01-14T19:07:50 WET" name="updateClientTest" description="ID 0033 - Update client with success" finished-at="2024-01-14T19:07:50 WET" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientTest -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientPositiveTest@62a8fd44]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- api.client.UpdateClientPositiveTest -->
+      <class name="api.client.DeleteClientNegativeTest">
+        <test-method signature="deleteClientWithId0()[pri:0, instance:api.client.DeleteClientNegativeTest@63998bf4]" started-at="2024-01-14T19:07:50 WET" name="deleteClientWithId0" description="ID 0016 - Delete client with ID equals 0" finished-at="2024-01-14T19:07:50 WET" duration-ms="9" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code to be [404] but was [204]
+Expected: is <404>
+     but: was <204>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is <404>
+     but: was <204>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+at api.client.DeleteClientNegativeTest.deleteClientWithId0(DeleteClientNegativeTest.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteClientWithId0 -->
+        <test-method signature="deleteClientWithNegativeId()[pri:0, instance:api.client.DeleteClientNegativeTest@63998bf4]" started-at="2024-01-14T19:07:50 WET" name="deleteClientWithNegativeId" description="ID 0014 - Delete client with negative ID" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code to be [404] but was [204]
+Expected: is <404>
+     but: was <204>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is <404>
+     but: was <204>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+at api.client.DeleteClientNegativeTest.deleteClientWithNegativeId(DeleteClientNegativeTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteClientWithNegativeId -->
+        <test-method signature="deleteNonExistentClientByIdTest()[pri:0, instance:api.client.DeleteClientNegativeTest@63998bf4]" started-at="2024-01-14T19:07:50 WET" name="deleteNonExistentClientByIdTest" description="ID 0015 - Delete a non-existent client by id" finished-at="2024-01-14T19:07:50 WET" duration-ms="12" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code to be [404] but was [204]
+Expected: is <404>
+     but: was <204>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code to be [404] but was [204]
+Expected: is <404>
+     but: was <204>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ResponseValidator.assertNotFound(ResponseValidator.java:63)
+at api.client.DeleteClientNegativeTest.deleteNonExistentClientByIdTest(DeleteClientNegativeTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNonExistentClientByIdTest -->
+      </class> <!-- api.client.DeleteClientNegativeTest -->
+      <class name="api.client.CreateClientPositiveTest">
+        <test-method signature="createClientTest()[pri:0, instance:api.client.CreateClientPositiveTest@3bd55d8]" started-at="2024-01-14T19:07:50 WET" name="createClientTest" description="ID 0010 - Create client with success" finished-at="2024-01-14T19:07:50 WET" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientPositiveTest@3bd55d8]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="createClientWithBirthDateSetToCurrentDateTest()[pri:0, instance:api.client.CreateClientPositiveTest@3bd55d8]" started-at="2024-01-14T19:07:50 WET" name="createClientWithBirthDateSetToCurrentDateTest" description="ID 0011 - Create client with the birth date set to current date" finished-at="2024-01-14T19:07:50 WET" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithBirthDateSetToCurrentDateTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientPositiveTest@3bd55d8]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="createClientWithClientDateSetToCurrentDateTest()[pri:0, instance:api.client.CreateClientPositiveTest@3bd55d8]" started-at="2024-01-14T19:07:50 WET" name="createClientWithClientDateSetToCurrentDateTest" description="ID 0012 - Create client with the client date set to current date" finished-at="2024-01-14T19:07:50 WET" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithClientDateSetToCurrentDateTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientPositiveTest@3bd55d8]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="createClientWithClientDateSetToPastDateTest()[pri:0, instance:api.client.CreateClientPositiveTest@3bd55d8]" started-at="2024-01-14T19:07:50 WET" name="createClientWithClientDateSetToPastDateTest" description="ID 0013 - Create client with the client date set to past date" finished-at="2024-01-14T19:07:50 WET" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithClientDateSetToPastDateTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientPositiveTest@3bd55d8]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- api.client.CreateClientPositiveTest -->
+      <class name="api.client.UpdateClientNegativeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientDuplicatedNIFTest()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateClientDuplicatedNIFTest" description="ID 0027 - Update client with Duplicated NIF" finished-at="2024-01-14T19:07:50 WET" duration-ms="15" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code to be [400] but was [200]
+Expected: is <400>
+     but: was <200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is <400>
+     but: was <200>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+at api.client.UpdateClientNegativeTest.updateClientDuplicatedNIFTest(UpdateClientNegativeTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientDuplicatedNIFTest -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientNullFieldsTest()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateClientNullFieldsTest" description="ID 0026 - Update client with null fields" finished-at="2024-01-14T19:07:50 WET" duration-ms="23" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Message is not the expected
+Expected: is "Invalid body"
+     but: was "Invalid Phone Number"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Message is not the expected
+Expected: is "Invalid body"
+     but: was "Invalid Phone Number"
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+at api.client.UpdateClientNegativeTest.updateClientNullFieldsTest(UpdateClientNegativeTest.java:91)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientNullFieldsTest -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientWithBirthDateWithCurrentDateTest()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateClientWithBirthDateWithCurrentDateTest" description="ID 0028 - Update client with birth date with current date" finished-at="2024-01-14T19:07:50 WET" duration-ms="9" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code to be [400] but was [200]
+Expected: is <400>
+     but: was <200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is <400>
+     but: was <200>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+at api.client.UpdateClientNegativeTest.updateClientWithBirthDateWithCurrentDateTest(UpdateClientNegativeTest.java:121)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientWithBirthDateWithCurrentDateTest -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientWithClientDateWithCurrentDateTest()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateClientWithClientDateWithCurrentDateTest" description="ID 0029 - Update client with client date with current date" finished-at="2024-01-14T19:07:50 WET" duration-ms="10" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code to be [400] but was [200]
+Expected: is <400>
+     but: was <200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is <400>
+     but: was <200>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+at api.client.UpdateClientNegativeTest.updateClientWithClientDateWithCurrentDateTest(UpdateClientNegativeTest.java:133)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientWithClientDateWithCurrentDateTest -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientWithIDTest()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateClientWithIDTest" description="ID 0030 - Update client with ID" finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientWithIDTest -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientWithIdZero()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateClientWithIdZero" description="ID  0024 - Update client with id 0" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code to be [400] but was [404]
+Expected: is <400>
+     but: was <404>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is <400>
+     but: was <404>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+at api.client.UpdateClientNegativeTest.updateClientWithIdZero(UpdateClientNegativeTest.java:65)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientWithIdZero -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientWithInvalidPhoneNumber()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateClientWithInvalidPhoneNumber" description="ID 0032 - Update client with invalid phone number" finished-at="2024-01-14T19:07:50 WET" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientWithInvalidPhoneNumber -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientWithInvalidPostalCode()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateClientWithInvalidPostalCode" description="ID 0031 - Update Client with invalid Postal Code " finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code to be [400] but was [200]
+Expected: is <400>
+     but: was <200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code to be [400] but was [200]
+Expected: is <400>
+     but: was <200>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+at api.client.UpdateClientNegativeTest.updateClientWithInvalidPostalCode(UpdateClientNegativeTest.java:157)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientWithInvalidPostalCode -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateClientWithNegativeIdTest()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateClientWithNegativeIdTest" description="ID 0025 - Update client with negative id" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code to be [400] but was [404]
+Expected: is <400>
+     but: was <404>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code to be [400] but was [404]
+Expected: is <400>
+     but: was <404>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ResponseValidator.assertBadRequest(ResponseValidator.java:51)
+at api.client.UpdateClientNegativeTest.updateClientWithNegativeIdTest(UpdateClientNegativeTest.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientWithNegativeIdTest -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="setup" finished-at="2024-01-14T19:07:50 WET" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateNonExistentClientTest()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="updateNonExistentClientTest" description="ID  0023 - Update non Existent client" finished-at="2024-01-14T19:07:50 WET" duration-ms="22" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Message is not the expected
+Expected: is "Client not found"
+     but: was "Vehicle not found"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Message is not the expected
+Expected: is "Client not found"
+     but: was "Vehicle not found"
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at api.validators.ErrorResponseValidator.assertErrorResponse(ErrorResponseValidator.java:12)
+at api.client.UpdateClientNegativeTest.updateNonExistentClientTest(UpdateClientNegativeTest.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateNonExistentClientTest -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:api.client.UpdateClientNegativeTest@408a247c]" started-at="2024-01-14T19:07:50 WET" name="cleanup" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- api.client.UpdateClientNegativeTest -->
+      <class name="api.client.GetClientNegativeTest">
+        <test-method signature="getClientByIdZeroTest()[pri:0, instance:api.client.GetClientNegativeTest@61942c1]" started-at="2024-01-14T19:07:50 WET" name="getClientByIdZeroTest" description="ID 0019 - Get a client with the id 0" finished-at="2024-01-14T19:07:50 WET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClientByIdZeroTest -->
+        <test-method signature="getClientWithNegativeIdTest()[pri:0, instance:api.client.GetClientNegativeTest@61942c1]" started-at="2024-01-14T19:07:50 WET" name="getClientWithNegativeIdTest" description="ID 0020 - Get client with a negative id" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClientWithNegativeIdTest -->
+        <test-method signature="getNonExistentClientByIdTest()[pri:0, instance:api.client.GetClientNegativeTest@61942c1]" started-at="2024-01-14T19:07:50 WET" name="getNonExistentClientByIdTest" description="ID 0018 - Get a non-existent client by id" finished-at="2024-01-14T19:07:50 WET" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNonExistentClientByIdTest -->
+      </class> <!-- api.client.GetClientNegativeTest -->
+      <class name="api.client.CreateClientNegativeTest">
+        <test-method signature="createClientDuplicatedNIF()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:48 WET" name="createClientDuplicatedNIF" description="ID 0006 - Create client with duplicated NIF" finished-at="2024-01-14T19:07:50 WET" duration-ms="1312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientDuplicatedNIF -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="createClientNullFieldsTest()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="createClientNullFieldsTest" description="ID 0001 - Create client with null fields" finished-at="2024-01-14T19:07:50 WET" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientNullFieldsTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="createClientWithBirthDateAfterClientDate()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="createClientWithBirthDateAfterClientDate" description="ID 0005 - Create client with the birth date set to after of client date achei que ia passar " finished-at="2024-01-14T19:07:50 WET" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithBirthDateAfterClientDate -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="createClientWithBirthDateLessThanToday()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="createClientWithBirthDateLessThanToday" description="ID 0002 - Create client with the birth date set to a past day" finished-at="2024-01-14T19:07:50 WET" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithBirthDateLessThanToday -->
+        <test-method signature="createClientWithBirthDateSetToFutureDateTest()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="createClientWithBirthDateSetToFutureDateTest" description="ID 0004 - Create client with the birth date set to a future date" finished-at="2024-01-14T19:07:50 WET" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithBirthDateSetToFutureDateTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="createClientWithClientDateSetToFutureDateTest()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="createClientWithClientDateSetToFutureDateTest" description="ID 0003 - Create client with the client date set to future date" finished-at="2024-01-14T19:07:50 WET" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithClientDateSetToFutureDateTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="createClientWithIDTest()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="createClientWithIDTest" description="ID 0007 - Create client with id" finished-at="2024-01-14T19:07:50 WET" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithIDTest -->
+        <test-method signature="createClientWithInvalidPhoneNumber()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="createClientWithInvalidPhoneNumber" description="ID 0009 - Create Client with invlaid phone number" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithInvalidPhoneNumber -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="createClientWithInvalidPostalCode()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="createClientWithInvalidPostalCode" description="ID 0008 - Create client with Invalid postal code" finished-at="2024-01-14T19:07:50 WET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createClientWithInvalidPostalCode -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:api.client.CreateClientNegativeTest@4ad4936c]" started-at="2024-01-14T19:07:50 WET" name="cleanUp" finished-at="2024-01-14T19:07:50 WET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- api.client.CreateClientNegativeTest -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
+</testng-results>
