@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.059s</div>
+<div class="counter">0.132s</div>
 <p>duration</p>
 </div>
 </td>
@@ -525,52 +525,52 @@ Expected: is &quot;Client not found&quot;
 </thead>
 <tr>
 <td class="failures">updateClientBirthDateToFutureDateTest</td>
-<td class="failures">0.006s</td>
+<td class="failures">0.021s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">updateClientDuplicatedNIFTest</td>
-<td class="failures">0.008s</td>
+<td class="failures">0.020s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">updateClientNullFieldsTest</td>
-<td class="failures">0.004s</td>
+<td class="failures">0.010s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">updateClientWithBirthDateWithCurrentDateTest</td>
-<td class="failures">0.004s</td>
+<td class="failures">0.013s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">updateClientWithIDTest</td>
-<td class="success">0.004s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">updateClientWithIdZero</td>
-<td class="failures">0.006s</td>
+<td class="failures">0.009s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">updateClientWithInvalidPhoneNumber</td>
-<td class="success">0.009s</td>
+<td class="success">0.008s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">updateClientWithInvalidPostalCode</td>
-<td class="failures">0.006s</td>
+<td class="failures">0.012s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">updateClientWithNegativeIdTest</td>
-<td class="failures">0.005s</td>
+<td class="failures">0.011s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">updateNonExistentClientTest</td>
-<td class="failures">0.007s</td>
+<td class="failures">0.021s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -578,783 +578,783 @@ Expected: is &quot;Client not found&quot;
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+<pre>jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (1ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (3ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 719
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 745
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; PUT http://localhost:8080/client/719
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/745
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-21&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 200 http://localhost:8080/client/719 (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 200 http://localhost:8080/client/745 (15ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 719
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 745
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/719
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/745
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/719 (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/745 (5ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (4ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 720
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 746
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (1ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (9ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 721
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 747
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; PUT http://localhost:8080/client/720
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/746
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 200 http://localhost:8080/client/720 (1ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 200 http://localhost:8080/client/746 (5ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 720
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 746
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/720
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/746
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/720 (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/746 (12ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (1ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (8ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 722
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 748
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; PUT http://localhost:8080/client/722
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/748
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 169
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:null,&quot;lastName&quot;:null,&quot;address&quot;:null,&quot;postalCode&quot;:null,&quot;city&quot;:null,&quot;country&quot;:null,&quot;phoneNumber&quot;:null,&quot;nif&quot;:null,&quot;birthDate&quot;:null,&quot;clientDate&quot;:null}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (169-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 400 http://localhost:8080/client/722 (1ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 400 http://localhost:8080/client/748 (6ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: close
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.630+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Invalid Phone Number&quot;,&quot;path&quot;:&quot;/client/722&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T23:18:23.383+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Invalid Phone Number&quot;,&quot;path&quot;:&quot;/client/748&quot;}
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (134-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/722
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/748
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/722 (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/748 (6ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (5ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 723
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 749
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; PUT http://localhost:8080/client/723
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/749
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-18&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 200 http://localhost:8080/client/723 (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 200 http://localhost:8080/client/749 (9ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 723
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 749
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/723
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/749
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/723 (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/749 (10ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (4ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 724
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 750
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; PUT http://localhost:8080/client/724
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/750
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 233
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:2,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (233-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 400 http://localhost:8080/client/724 (1ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 400 http://localhost:8080/client/750 (4ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: close
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.660+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Id on body should be null on Update&quot;,&quot;path&quot;:&quot;/client/724&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T23:18:23.440+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Id on body should be null on Update&quot;,&quot;path&quot;:&quot;/client/750&quot;}
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (149-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/724
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/750
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/724 (3ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/750 (5ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (4ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 725
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 751
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; PUT http://localhost:8080/client/0
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 404 http://localhost:8080/client/0 (3ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 404 http://localhost:8080/client/0 (6ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.678+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Vehicle not found&quot;,&quot;path&quot;:&quot;/client/0&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T23:18:23.462+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Vehicle not found&quot;,&quot;path&quot;:&quot;/client/0&quot;}
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (127-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/725
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/751
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/725 (3ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/751 (4ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (4ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 726
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 752
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; PUT http://localhost:8080/client/726
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/752
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 235
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:91356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (235-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 400 http://localhost:8080/client/726 (4ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 400 http://localhost:8080/client/752 (6ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: close
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.696+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Invalid Phone Number&quot;,&quot;path&quot;:&quot;/client/726&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T23:18:23.484+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;message&quot;:&quot;Invalid Phone Number&quot;,&quot;path&quot;:&quot;/client/752&quot;}
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (134-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/726
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/752
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/726 (3ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/752 (5ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (3ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (6ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 727
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 753
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; PUT http://localhost:8080/client/727
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/753
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 235
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;376512a&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (235-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 200 http://localhost:8080/client/727 (3ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 200 http://localhost:8080/client/753 (7ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 727
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 753
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/727
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/753
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/727 (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/753 (16ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (3ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (8ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 728
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 754
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; PUT http://localhost:8080/client/-1
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 404 http://localhost:8080/client/-1 (3ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 404 http://localhost:8080/client/-1 (7ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.735+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Vehicle not found&quot;,&quot;path&quot;:&quot;/client/-1&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T23:18:23.553+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Vehicle not found&quot;,&quot;path&quot;:&quot;/client/-1&quot;}
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (128-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/728
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/754
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/728 (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/754 (7ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; POST http://localhost:8080/client
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END POST (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 201 http://localhost:8080/client (2ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 201 http://localhost:8080/client (5ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:22 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: 729
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 755
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (3-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/729
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/755
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/729 (1ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/755 (10ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:23 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; PUT http://localhost:8080/client/729
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; PUT http://localhost:8080/client/755
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json; charset=UTF-8
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Length: 236
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: {&quot;id&quot;:null,&quot;firstName&quot;:&quot;Pedro&quot;,&quot;lastName&quot;:&quot;Peyroteo&quot;,&quot;address&quot;:&quot;Rua do Vale, 50&quot;,&quot;postalCode&quot;:&quot;3865-100&quot;,&quot;city&quot;:&quot;Estarreja&quot;,&quot;country&quot;:&quot;Portugal&quot;,&quot;phoneNumber&quot;:910356180,&quot;nif&quot;:275713741,&quot;birthDate&quot;:&quot;2024-01-14&quot;,&quot;clientDate&quot;:&quot;2024-01-14&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END PUT (236-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 404 http://localhost:8080/client/729 (3ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 404 http://localhost:8080/client/755 (6ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Content-Type: application/json
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Transfer-Encoding: chunked
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:23 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: 
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: {&quot;timestamp&quot;:&quot;2024-01-14T22:30:08.751+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Vehicle not found&quot;,&quot;path&quot;:&quot;/client/729&quot;}
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;timestamp&quot;:&quot;2024-01-14T23:18:23.591+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Vehicle not found&quot;,&quot;path&quot;:&quot;/client/755&quot;}
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP (129-byte body)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: --&gt; DELETE http://localhost:8080/client/729
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; DELETE http://localhost:8080/client/755
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: --&gt; END DELETE
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: &lt;-- 204 http://localhost:8080/client/729 (1ms)
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
-INFO: Date: Sun, 14 Jan 2024 22:30:08 GMT
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 204 http://localhost:8080/client/755 (3ms)
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
+INFO: Date: Sun, 14 Jan 2024 23:18:23 GMT
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Keep-Alive: timeout=60
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: Connection: keep-alive
-jan. 14, 2024 10:30:08 DA TARDE okhttp3.internal.platform.Platform log
+jan. 14, 2024 11:18:23 DA TARDE okhttp3.internal.platform.Platform log
 INFO: &lt;-- END HTTP
 </pre>
 </span>
@@ -1367,7 +1367,7 @@ INFO: &lt;-- END HTTP
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.4</a> at 14/01/2024, 22:30:08</p>
+<a href="http://www.gradle.org">Gradle 8.4</a> at 14/01/2024, 23:18:23</p>
 </div>
 </div>
 </body>

@@ -14,8 +14,6 @@ import java.io.IOException;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 import static api.helper.ClientRequests.newPositiveClient;
 import static api.helper.ErrorClientResponses.*;
@@ -26,15 +24,12 @@ import static api.retrofit.garage.Error.getErrorResponse;
 
 public class CreateClientNegativeTest {
     private Integer newClientId, newClientIdHelper;
-    private List<Integer> newClientIds = new ArrayList<>();
 
     @AfterMethod
     public void cleanUp(){
         if (newClientId != null){
-            System.out.println("CLIENT ID: " + newClientId);
             Response<Void> response = Client.deleteClient(newClientId);
             assertNoContent(response);
-            System.out.println("WAS DELETED");
         } else if (newClientIdHelper != null) {
             Response<Void> response = Client.deleteClient(newClientIdHelper);
             assertNoContent(response);
