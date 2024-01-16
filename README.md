@@ -1,4 +1,4 @@
-# Garage API
+# Garage API Testes
 Projeto final da UC de Testes e Qualidade de Sfotware.
 
 # Documentação da API
